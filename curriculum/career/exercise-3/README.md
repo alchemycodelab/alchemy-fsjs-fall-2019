@@ -1,16 +1,27 @@
-# Exercise 3: Cars
+# Exercise 3: Set
 
-* create a `Car` class in `Car.js` and `Car.test.js`
-* `Car` has a make, model, year, color, miles
-  * make, model, year, color are passed to the constructor
-  * miles is set at 0 initially
-  * test that a new `Car` has the expected
-    make, model, year, miles, and color properties
-* `Car` has a `drive` method that takes `drivenMiles`
-  * increment the `miles` property by the `drivenMiles` parameter
-  * test after calling `drive` that miles is what you expect
-* `Car` has a `makes` static methods
-  * `makes` returns an array of valid car makes
-    (e.g. 'Honda', 'Ford', etc.)
-* BONUS: Update `Car` constructor so if make is not a valid
-  make (from your `makes` static method), it throws an error
+* create a `Set` class in `Set.js` and `Set.test.js`
+* `Set` is an array like structure without duplicates
+* instance methods
+  * `add` add an item to the set
+  * `remove` remove an item from the set
+  * `has` checks if an item is in the set returns true or false
+  * `intersection` takes a set returns a new `Set` with
+    the intersection of those sets
+  * `union` takes a set and returns a new `Set` with the
+    union of those sets
+  * `difference` takes a set and returns a new `Set` with the
+    union of those sets
+* static methods
+  * `intersection` takes two sets and returns a new `Set` with
+    the intersection of those sets
+  * `union` takes two sets and returns a new `Set` with the
+    union of those sets
+  * `difference` takes two sets and returns a new `Set` with
+    the difference of those sets
+
+## More info
+
+* [intersection](https://en.wikipedia.org/wiki/Intersection_(set_theory))
+* [union](https://en.wikipedia.org/wiki/Union_(set_theory))
+* [difference](https://en.wikipedia.org/wiki/Symmetric_difference)
