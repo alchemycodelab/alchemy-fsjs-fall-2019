@@ -1,0 +1,43 @@
+{
+  "name": "in-class-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prom.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "build": "webpack -p --devtool source-map",
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@types/jest": "^24.0.20",
+    "autoprefixer": "^9.7.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}
