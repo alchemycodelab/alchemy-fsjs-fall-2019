@@ -14,11 +14,6 @@ Starter code has been provided for you in the `/lab/starter-code` folder.
 
 ### Modularize and Refactor
 
-Refactor the application given by first modularizing it, and then
-altering it's basic functionality of generating a random number
-into a proper counter application that tracks a number based on
-button clicks.
-
 * Move the `Header` and `Footer` components to separate files
 * Properly `export` them as defaults
 * Import them into the `App` Component using ES6 `import` statement
