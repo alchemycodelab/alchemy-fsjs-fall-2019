@@ -1,0 +1,23 @@
+.Color {
+  color: red;
+
+  dt {
+    color: blue;
+
+    input {
+      &:hover {
+        color: yellow;
+        transform: translateY(100px);
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

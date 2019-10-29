@@ -1,24 +1,39 @@
 import React from 'react';
-import Dog from './Dog';
+import Color from './Color';
 
 const Header = () => (
   <header>
-    <h1>My Dogs</h1>
+    <h1>My Dog</h1>
   </header>
-)
+);
 
-const App = () => {
+const Dog = () => {
+  const dog = {
+    name: 'Spot',
+    age: 5,
+    weight: '20 lbs'
+  };
+
+  return (
+    <dl>
+      <dt>Name</dt>
+      <dd>{dog.name}</dd>
+
+      <dt>Age</dt>
+      <dd>{dog.age}</dd>
+
+      <dt>Weight</dt>
+      <dd>{dog.weight}</dd>
+    </dl>
+  )
+}
+
+export default function App() {
   return (
     <>
       <Header />
       <Dog />
-      <ul>
-        <li>Spot</li>
-        <li>Rover</li>
-        <li>Max</li>
-      </ul>
+      <Color />
     </>
   );
-}
-
-export default App;
+};

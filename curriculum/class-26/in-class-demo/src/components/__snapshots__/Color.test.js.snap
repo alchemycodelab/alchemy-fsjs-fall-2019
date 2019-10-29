@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color component matches a snapshot 1`] = `
+<dl>
+  <dt>
+    Name
+  </dt>
+  <dd>
+    Blue 
+    <div
+      style={
+        Object {
+          "backgroundColor": "blue",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    />
+  </dd>
+  <dt>
+    Hex
+  </dt>
+  <dt>
+    #0000FB
+  </dt>
+  <dt>
+    RGB
+  </dt>
+  <dd>
+    <p>
+      Red - 0
+    </p>
+    <p>
+      Green - 0
+    </p>
+    <p>
+      Blue - 245
+    </p>
+  </dd>
+</dl>
+`;

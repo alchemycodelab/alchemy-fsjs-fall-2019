@@ -507,6 +507,7 @@ const dogElement = (
 Ultimately, JSX is JavaScript. We can evaluate JavaScript between `{}` inside of our JSX.
 
 ```js
+
 const title = 'My Header'
 const element = <h1>{title}</h1>
 ```
@@ -575,7 +576,7 @@ import React from 'react'
 
 export default function App() {
   return <h1>Hi</h1>
-}
+};
 ```
 
 ```js
@@ -600,7 +601,7 @@ export default function App() {
       <dt>Weight</dt>
       <dd>{dog.weight}</dd>
     </dl>
-  )
+  );
 }
 ```
 
