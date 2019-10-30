@@ -1,48 +1,35 @@
 import React, { Component } from 'react';
-import Character from './character/Character';
-import Button from './button/Button';
 import ColorPicker from './colors/ColorPicker';
-
-const character = {
-  id: 1,
-  name: 'Rick Sanchez',
-  status: 'Alive',
-  species: 'Human',
-  image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
-};
 
 export default class App extends Component {
   state = {
-    name: 'ryan',
-    count: 0,
-    open: false
+    backgroundColor: 'red'
   };
 
-  myFunc = name => {
-    this.setState({ name });
-    console.log(name);
+  updateColor = color => {
+    this.setState({ backgroundColor: color });
   }
 
-  increment = () => {
-    this.setState(state => {
-      return {
-        count: state.count + 1
-      };
-    });
+  componentDidMount() {
+    console.log('I am mounted');
   }
 
-  toggle = () => {
-    this.setState(state => {
-      return {
-        open: !state.open
-      };
-    });
+  componentDidUpdate() {
+    console.log('I am updated');
+  }
+
+  componentWillUnmount() {
+    console.log('i am unmounted');
   }
 
   render() {
     return (
       <>
-        <ColorPicker colors={['red', 'blue', 'yellow', 'green', 'purple']} />
+        <ColorPicker
+          colors={['red', 'blue', 'yellow', 'green', 'purple']}
+          backgroundColor={this.state.backgroundColor}
+          updateColor={this.updateColor}
+        />
       </>
     );
   }

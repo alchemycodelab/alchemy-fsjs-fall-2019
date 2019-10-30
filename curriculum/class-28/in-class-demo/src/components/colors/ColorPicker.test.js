@@ -7,4 +7,10 @@ describe('ColorPicker component', () => {
     const wrapper = shallow(<ColorPicker />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('console logs on color click', () => {
+    const wrapper = shallow(<ColorPicker colors={['red', 'green', 'purple']} />);
+    wrapper.findWhere(el => el.key() === 'green').simulate('click');
+    expect(wrapper.state('backgroundColor')).toBe('green');
+  });
 });

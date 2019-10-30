@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<h1>
-  Hello World
-</h1>
+<Fragment>
+  <ColorPicker
+    colors={
+      Array [
+        "red",
+        "blue",
+        "yellow",
+        "green",
+        "purple",
+      ]
+    }
+  />
+</Fragment>
 `;
