@@ -6,8 +6,8 @@
 * Passing props
   * Components takes props
   * Passing props to a component
-* Type checking props
 * Conditional Rendering
+* Type checking props
 
 ## Dependencies
 
