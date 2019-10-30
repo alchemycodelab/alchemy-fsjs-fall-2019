@@ -29,7 +29,8 @@ Demo [Random Color](https://demo.alchemycodelab.io/random-color)
 
 ## Tests
 
-Write mount/enzyme tests for each component
+Write mount/enzyme tests for each component, including the
+stater-code components.
 
 ## Assignment Submission Instructions
 Refer to the the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for the complete lab submission process and expectations
