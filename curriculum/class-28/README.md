@@ -126,10 +126,10 @@ export default class Dog extends Component {
 ### Class Component Event Handlers
 
 ```js
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Button extends PureComponent {
+export default class Button extends Component {
 
   static propTypes = {
     title: PropTypes.string.isRequired
@@ -153,9 +153,9 @@ Components can define state inside of the class body.
 State can be accessed using `this.state`
 
 ```js
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 
-export default class Dog extends PureComponent {
+export default class Dog extends Component {
   state = {
     name: 'spot',
     weight: '20 lbs',

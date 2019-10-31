@@ -12,6 +12,14 @@ export default class ColorPicker extends Component {
     colors: ['red', 'blue', 'yellow']
   }
 
+  componentDidMount() {
+    console.log('You birthed me!');
+  }
+
+  componentWillUnmount() {
+    console.log('you killed me!');
+  }
+
   render() {
     const style = {
       border: 0,
