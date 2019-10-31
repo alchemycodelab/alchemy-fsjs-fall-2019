@@ -31,6 +31,23 @@ Refactor this application as follows
 * Create a `<DeckOfCards />` component
 * Have the `<DeckOfCards />` render each of its items as a `<Card />`
 
+```
+<Deck>
+  <Card>
+  <Card>
+</Deck>
+
+
+<DeckOfCards items={[]} />
+
+
+return (
+  <Deck>
+    {cards}
+  </Deck>
+)
+```
+
 ### Use an API
 
 Refactor your code so it no longer relies on `content.json`

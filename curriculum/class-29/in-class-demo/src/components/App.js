@@ -4,6 +4,7 @@ import Wolves from './wolves/Wolves';
 import List from './List';
 import Wolf from './wolves/Wolf';
 import Flex from './flexible/Flex';
+import CreateWolf from './wolves/CreateWolf';
 
 const wolves = [
   { name: 'scout', img: 'https://ih1.redbubble.net/image.509463701.1253/mp,840x860,gloss,f8f8f8,t-pad,1000x1000,f8f8f8.jpg' },
@@ -13,13 +14,7 @@ const wolves = [
 export default function App() {
   return (
     <>
-      <h1>Hipster wolves</h1>
-      {/* <List items={wolves} Component={Wolf} /> */}
-      {/* <Wolves wolves={wolves} /> */}
-      <Flex title="Hello" justify="space-around">
-        <img src={wolves[0].img} />
-        <img src={wolves[1].img} />
-      </Flex>
+      <CreateWolf />
     </>
   );
 }
