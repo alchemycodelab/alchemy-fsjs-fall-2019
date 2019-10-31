@@ -1,0 +1,9 @@
+.Flex {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  * {
+    max-width: 33vw;
+  }
+}
