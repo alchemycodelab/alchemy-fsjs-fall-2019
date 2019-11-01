@@ -331,14 +331,14 @@ export default class CreateDog extends PureComponent {
 
   render() {
     const {
-      name,
+      dogName,
       age,
       weight
     } = this.state;
 
     return (
       <form onSubmit={this.handleSubmit}>
-        <input name="dogName" value={name} onChange={this.handleChange} />
+        <input name="dogName" value={dogName} onChange={this.handleChange} />
         <input name="age" value={age} onChange={this.handleChange} />
         <input name="weight" value={weight} onChange={this.handleChange} />
         <button>Create Dog</button>

@@ -14,6 +14,10 @@ const wolves = [
 export default function App() {
   return (
     <>
+      <Flex>
+        <p>hi</p>
+        <p>there</p>
+      </Flex>
       <CreateWolf />
     </>
   );
