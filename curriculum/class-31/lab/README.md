@@ -11,6 +11,10 @@ Fetch and display a list of Avatar characters from the
 Clicking on a character should bring you to another page with
 extra details about the character.
 
+### Header/Footer
+
+* Create a Header and Footer that renders on every page
+
 ### Home Page
 
 * Display a single random character's image
