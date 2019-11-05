@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Habit from './Habit';
 
-const Habits = ({ habits, handleProgress }) => {
+const Habits = ({ habits, handleClick, buttonText }) => {
   const habitElements = habits.map(habit => (
     <li key={habit.title}>
       <Habit
         title={habit.title}
         progress={habit.progress}
         goal={habit.goal}
-        handleProgress={handleProgress} />
+        handleClick={handleClick}
+        buttonText={buttonText} />
     </li>
   ));
   return (
@@ -25,7 +26,8 @@ Habits.propTypes = {
     progress: PropTypes.number.isRequired,
     goal: PropTypes.number.isRequired
   })).isRequired,
-  handleProgress: PropTypes.func.isRequired
+  handleClick: PropTypes.func.isRequired,
+  buttonText: PropTypes.string.isRequired
 };
 
 export default Habits;
