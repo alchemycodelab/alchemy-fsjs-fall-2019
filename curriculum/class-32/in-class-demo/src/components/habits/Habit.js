@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Habit = ({ title, progress, goal, handleProgress }) => {
   return (
     <section>
-      <h3>{title}</h3>
+      <Link to={`/progress/${progress}`}><h3>{title}</h3></Link>
       <progress value={progress} max={goal}></progress>
       <button name={title} onClick={handleProgress}>+</button>
     </section>

@@ -1,0 +1,8 @@
+.Quote {
+  max-width: 200px;
+  overflow: hidden;
+  text-align: center;
+  img {
+    max-height: 200px;
+  }
+}
