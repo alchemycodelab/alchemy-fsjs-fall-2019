@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HabitTracker matches a snapshot 1`] = `
+<Fragment>
+  <HabitForm
+    goal=""
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    title=""
+  />
+  <section>
+    <h2>
+      Doing
+    </h2>
+    <Habits
+      buttonText="+"
+      habits={
+        Array [
+          Object {
+            "goal": 8,
+            "progress": 0,
+            "title": "Drink Water",
+          },
+        ]
+      }
+      handleClick={[Function]}
+    />
+  </section>
+  <section>
+    <h2>
+      Done
+    </h2>
+    <Habits
+      buttonText="↻"
+      habits={Array []}
+      handleClick={[Function]}
+    />
+  </section>
+</Fragment>
+`;

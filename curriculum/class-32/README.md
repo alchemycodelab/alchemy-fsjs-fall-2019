@@ -55,9 +55,12 @@ import React, { useState } from 'react'
 
 export default function MyComp() {
   const [count, updateCount] = useState(0);
+  // count -> this.state.count;
+  // updateCount(5) -> this.setState({ count: 5 })
   const [input, updateInput] = useState('');
 
   const handleCount = () => updateCount(prevCount => prevCount + 1);
+  // this.setState(state => ({ count: state.count + 1 }));
   const handleInputChange = ({ target }) => updateInput(target.value);
 
   return (
@@ -73,7 +76,7 @@ export default function MyComp() {
 ## useEffect
 
 `useEffect` allows us to perform side effects (changes that don't depend
-on what is passedto our component). This is useful for making API calls.
+on what is passed to our component). This is useful for making API calls.
 
 ```js
 import React, { useState, useEffect } from 'react';
