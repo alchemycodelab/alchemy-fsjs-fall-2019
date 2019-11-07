@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useEffect, Component } from 'react';
+import React, { useReducer, useEffect, useMemo } from 'react';
 import HabitForm from '../components/habits/HabitForm';
 import Habits from '../components/habits/Habits';
 
@@ -22,7 +22,7 @@ const PROGRESS_HABIT = 'PROGRESS_HABIT';
 const RESET_HABIT = 'RESET_HABIT';
 
 const handleProgressChange = (state, title, fn) => {
-  state.map(habit => {
+  return state.map(habit => {
     if(habit.title !== title) return habit;
     return {
       ...habit,
@@ -68,9 +68,9 @@ const HabitTracker = () => {
   const handleSubmit = event => {
     event.preventDefault();
     const { title, goal } = formState;
-    dispatch({
+    dispatchHabits({
       type: CREATE_HABIT,
-      payload: { title, goal, progress: 0 }
+      payload: { title, goal: Number(goal), progress: 0 }
     });
   };
 

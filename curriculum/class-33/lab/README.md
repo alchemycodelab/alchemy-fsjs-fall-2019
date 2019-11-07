@@ -11,6 +11,7 @@ Continue the Artist Search lab.
 
 * create a custom `useArtists` hook to get a list of artists
 * create a custom `useReleases` hook to get a list of releases
+* create a custom `useLyrics` hook to get lyrics
 
 ## New Features
 

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Habit = ({ title, progress, goal, handleClick, buttonText }) => {
+  console.log('habit', title);
   return (
     <section>
       <Link to={`/progress/${progress}`}><h3>{title}</h3></Link>

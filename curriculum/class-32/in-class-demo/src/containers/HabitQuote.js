@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Quotes from '../components/quotes/Quotes';
-import { getQuotes } from '../services/futuramaApi';
+import useQuotes from '../hooks/useQuotes';
 
 const HabitQuote = ({ match }) => {
-  const [quotes, setQuotes] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true);
-    getQuotes(match.params.progress)
-      .then(fetchedQuotes => {
-        setQuotes(fetchedQuotes);
-        setLoading(false);
-      });
-  }, [match.params.progress]);
+  const { quotes, loading } = useQuotes(match.params.progress);
 
   if(loading) return <h1>Loading!</h1>; true;
 
