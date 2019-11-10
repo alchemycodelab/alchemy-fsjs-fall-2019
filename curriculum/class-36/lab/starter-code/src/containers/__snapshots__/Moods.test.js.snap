@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Moods container matches a snapshot 1`] = `
+<Fragment>
+  <Controls
+    actions={
+      Array [
+        Object {
+          "name": "DRINK_COFFEE",
+          "text": "Drink Coffee",
+        },
+        Object {
+          "name": "EAT_SNACK",
+          "text": "Snack",
+        },
+        Object {
+          "name": "TAKE_NAP",
+          "text": "Nap",
+        },
+        Object {
+          "name": "STUDY",
+          "text": "Study",
+        },
+      ]
+    }
+    handleSelection={[Function]}
+  />
+  <Face
+    emoji="🤬"
+  />
+</Fragment>
+`;

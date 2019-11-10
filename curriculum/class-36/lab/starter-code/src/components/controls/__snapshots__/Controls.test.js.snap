@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controls component renders Controls 1`] = `
+<section
+  className="Controls"
+>
+  <button
+    key="DO_STUFF"
+    onClick={[Function]}
+  >
+    stuff
+  </button>
+  <button
+    key="other"
+    onClick={[Function]}
+  >
+    other
+  </button>
+</section>
+`;
