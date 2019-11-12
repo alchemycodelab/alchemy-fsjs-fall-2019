@@ -15,10 +15,7 @@
 
 ## Containers
 
-* `TitleSubtitleEditor.js`
+* `TitleSubtitle.js`
   * Container
   * select title and subtitle
   * dispatch actions to update title and subtitle
-* `TitleSubtitleDisplay.js`
-  * Container
-  * select title and subtitle
