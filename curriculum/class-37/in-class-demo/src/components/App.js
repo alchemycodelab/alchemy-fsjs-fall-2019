@@ -1,7 +1,7 @@
 import React from 'react';
-import DogPlay from '../containers/DogPlay';
+import TitleSubtitle from '../containers/TitleSubtitle';
 
 export default function App() {
-  return <DogPlay />;
+  return <TitleSubtitle />;
 }
   
