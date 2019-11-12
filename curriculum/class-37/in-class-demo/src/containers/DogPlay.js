@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { incrementAge, setDogName } from '../actions/dogActions';
+import { getDogName, getDogAge, getDogWeight } from '../selectors/dogSelectors';
 
 const DogPlay = ({ name, age, weight, handleDogNameChange, handleClick }) => {
   return (
@@ -32,9 +33,9 @@ DogPlay.propTypes = {
 // store.getState()
 const mapStateToProps = state => {
   return {
-    name: state.name,
-    age: state.age,
-    weight: state.weight
+    name: getDogName(state),
+    age: getDogAge(state),
+    weight: getDogWeight(state)
   };
 };
 
