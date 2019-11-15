@@ -37,10 +37,10 @@ function updateAssignmentDueDate(id, due_at) {
 function updateAssignment(id, assignment) {
   return put(`https://canvas.instructure.com/api/v1/courses/${courseId}/assignments/${id}`, { assignment })
 }
-
 function getAssignment(id) {
   return get(`https://canvas.instructure.com/api/v1/courses/${courseId}/assignments/${id}`)
 }
+bw    
 
 function getAssignments() {
   return get(`https://canvas.instructure.com/api/v1/courses/${courseId}/assignment_groups?exclude_response_fields%5B%5D=description&exclude_response_fields%5B%5D=rubric&include%5B%5D=assignments&include%5B%5D=discussion_topic&include%5B%5D=all_dates&include%5B%5D=module_ids&override_assignment_dates=false&per_page=100`)
