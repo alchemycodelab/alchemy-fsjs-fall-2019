@@ -20,3 +20,10 @@ export const setQuote = () => dispatch => {
       });
     });
 };
+
+export const setQuotePromise = () => ({
+  type: SET_QUOTE,
+  loadingType: SET_QUOTE_LOADING,
+  doneType: SET_QUOTE_DONE,
+  payload: fetchQuote()
+});
